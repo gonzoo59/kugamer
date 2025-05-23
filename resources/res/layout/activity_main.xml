@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/m_layoutRoot" android:background="@mipmap/bg_m4" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/settings" android:background="@mipmap/gear" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginLeft="20dp"/>
+            <ImageButton android:id="@+id/m_btnID" android:background="@mipmap/id" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginLeft="3dp"/>
+            <ImageButton android:id="@+id/m_btnFacebook" android:background="@mipmap/facebook" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginLeft="3dp"/>
+            <ImageButton android:id="@+id/m_btnAdvice" android:background="@mipmap/advice" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginLeft="3dp"/>
+            <ImageButton android:id="@+id/m_btnHelp" android:background="@mipmap/help_web" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginLeft="3dp"/>
+            <com.baidu.kwgames.view.MarqueTextView android:textSize="12sp" android:textColor="#4caf50" android:ellipsize="marquee" android:gravity="top|center_horizontal" android:id="@+id/marquee_textview" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="1" android:marqueeRepeatLimit="marquee_forever" android:onClick="onMarqueeTextClick"/>
+        </LinearLayout>
+        <TextView android:textSize="10sp" android:textColor="@color/colorRed" android:id="@+id/connect_state" android:paddingLeft="30dp" android:paddingBottom="20dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/throne_not_connected"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/ai_gun_press_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai" android:layout_weight="1" android:textAlignment="textEnd"/>
+            <androidx.appcompat.widget.SwitchCompat android:ellipsize="none" android:gravity="start" android:layout_gravity="left" android:id="@+id/ai" android:layout_width="20dp" android:layout_height="25dp" android:layout_marginRight="30dp" android:layout_weight="0.5"/>
+            <Button android:id="@+id/btn_ai_dynamic_onoff" android:background="@mipmap/dynamic_off" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginRight="2dp" android:layout_weight="0"/>
+            <Button android:id="@+id/btn_ai_continues_shoot_onoff" android:background="@mipmap/continues_shoot_off" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginRight="2dp" android:layout_weight="0"/>
+            <Button android:id="@+id/btn_ai_crosshair" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginRight="2dp" android:layout_weight="0"/>
+            <Button android:id="@+id/m_btnAIXScope" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginRight="2dp" android:layout_weight="0"/>
+            <Button android:id="@+id/m_btn1stBulletOptimize" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginRight="2dp" android:layout_weight="0"/>
+            <Button android:id="@+id/m_btnAutoActiveRun" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginRight="2dp" android:layout_weight="0"/>
+            <Button android:id="@+id/m_btnQianliyan" android:background="@mipmap/qianliyan" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginRight="2dp"/>
+            <Button android:id="@+id/m_btnTPPFPP" android:background="@mipmap/tppfpp" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginRight="2dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ai_period_layer" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/ai_period_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/ai_period_title" android:layout_weight="1" android:textAlignment="textEnd"/>
+            <androidx.appcompat.widget.AppCompatSeekBar android:textColor="#ffffff" android:id="@+id/ai_period_slider" android:layout_width="0dp" android:layout_height="match_parent" android:max="350" android:progress="0" android:progressDrawable="@drawable/seekbar_style" android:layout_weight="1"/>
+            <TextView android:textColor="#ffffff" android:id="@+id/ai_period_text" android:layout_width="40dp" android:layout_height="wrap_content"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <Button android:textSize="8sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/m_btnAIGunDownPercent" android:background="@drawable/round_rect" android:layout_width="wrap_content" android:layout_height="25dp" android:layout_marginLeft="10dp" android:text="123" android:textAllCaps="false"/>
+                <Button android:id="@+id/m_btnSmartQE" android:background="@mipmap/smart_qe_off" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginLeft="10dp" android:layout_marginRight="2dp"/>
+                <Button android:textColor="@color/colorWhite" android:id="@+id/btn_ai_question" android:background="@mipmap/game_video" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="2dp" android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/gun1_down_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/_1" android:layout_weight="1" android:textAlignment="textEnd"/>
+            <androidx.appcompat.widget.AppCompatSeekBar android:textColor="#ffffff" android:id="@+id/gun1_sensitivity" android:layout_width="0dp" android:layout_height="wrap_content" android:max="64" android:progress="50" android:progressDrawable="@drawable/seekbar_style" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/gun1_sensitivity_text" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_weight="0"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/dynamic_gun" android:background="@mipmap/dynamic_off" android:layout_width="25dp" android:layout_height="25dp" android:layout_weight="0"/>
+                <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/gun1_reduce" android:background="@mipmap/minus" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="2dp"/>
+                <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/gun1_add" android:background="@mipmap/plus" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/gun2_down_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/_2" android:layout_weight="1" android:textAlignment="textEnd"/>
+            <androidx.appcompat.widget.AppCompatSeekBar android:id="@+id/gun2_sensitivity" android:layout_width="0dp" android:layout_height="wrap_content" android:max="64" android:progressDrawable="@drawable/seekbar_style" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/gun2_sensitivity_text" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_weight="0"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/gun2_reduce" android:background="@mipmap/minus" android:layout_width="25dp" android:layout_height="25dp"/>
+                <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/gun2_add" android:background="@mipmap/plus" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#ffffff" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/mouse_tip" android:layout_weight="1" android:textAlignment="textEnd"/>
+            <androidx.appcompat.widget.AppCompatSeekBar android:id="@+id/mouse_move_sensitivity" android:layout_width="0dp" android:layout_height="wrap_content" android:max="54" android:progressDrawable="@drawable/seekbar_style" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/mouse_move_sensitivity_text" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_weight="0"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/mouse_move_reduce" android:background="@mipmap/minus" android:layout_width="25dp" android:layout_height="25dp"/>
+                <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/mouse_move_add" android:background="@mipmap/plus" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="5dp"/>
+                <Button android:textSize="8sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/m_btnTouchSenseYPercent" android:background="@drawable/round_rect" android:layout_width="50dp" android:layout_height="20dp" android:layout_marginLeft="10dp" android:layout_marginRight="2dp" android:text="123" android:textAllCaps="false"/>
+                <Button android:id="@+id/m_btnFireSense" android:background="@mipmap/fire_sense" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginRight="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#ffffff" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/mouse_jt" android:layout_weight="1" android:textAlignment="textEnd"/>
+            <androidx.appcompat.widget.AppCompatSeekBar android:id="@+id/mouse_pointer_sensitivity" android:layout_width="0dp" android:layout_height="wrap_content" android:max="54" android:progressDrawable="@drawable/seekbar_style" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/mouse_pointer_sensitivity_text" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_weight="0"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/mouse_pointer_reduce" android:background="@mipmap/minus" android:layout_width="25dp" android:layout_height="25dp"/>
+                <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/mouse_pointer_add" android:background="@mipmap/plus" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="6dp" android:layout_weight="2">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <RelativeLayout android:background="@drawable/game_button" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginRight="4dp" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatButton android:textColor="#ffffff" android:id="@+id/game1" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/game_1" android:drawableRight="@android:drawable/ic_input_add"/>
+                <Button android:gravity="center" android:id="@+id/game1_video" android:background="@mipmap/game_video" android:layout_width="15dp" android:layout_height="15dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+                <TextView android:textSize="7sp" android:textColor="#ffffff" android:id="@+id/m_textClickPlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/video" android:layout_alignParentTop="true" android:layout_toEndOf="@+id/game1_video"/>
+                <TextView android:textSize="7sp" android:textColor="#ffffff" android:id="@+id/game1_right_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/game_click_start" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="7sp" android:textColor="#ffffff" android:id="@+id/game1_left_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/game_long_delete" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/game_button" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatButton android:textColor="#ffffff" android:id="@+id/game2" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/game_2" android:drawableRight="@android:drawable/ic_input_add"/>
+                <Button android:gravity="center" android:id="@+id/game2_video" android:background="@mipmap/game_video" android:layout_width="15dp" android:layout_height="15dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/game_button" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatButton android:textColor="#ffffff" android:id="@+id/game3" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/game_3" android:drawableRight="@android:drawable/ic_input_add"/>
+                <Button android:gravity="center" android:id="@+id/game3_video" android:background="@mipmap/game_video" android:layout_width="15dp" android:layout_height="15dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/game_button" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatButton android:textColor="#ffffff" android:id="@+id/game4" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/game_4" android:drawableRight="@android:drawable/ic_input_add"/>
+                <Button android:gravity="center" android:id="@+id/game4_video" android:background="@mipmap/game_video" android:layout_width="15dp" android:layout_height="15dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <RelativeLayout android:background="@drawable/game_button2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginRight="4dp" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatButton android:textColor="#ffffff" android:id="@+id/game5" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/game_5" android:drawableRight="@android:drawable/ic_input_add"/>
+                <Button android:gravity="center" android:id="@+id/game5_video" android:background="@mipmap/game_video" android:layout_width="15dp" android:layout_height="15dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/game_button2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatButton android:textColor="#ffffff" android:id="@+id/game6" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/game_6" android:drawableRight="@android:drawable/ic_input_add"/>
+                <Button android:gravity="center" android:id="@+id/game6_video" android:background="@mipmap/game_video" android:layout_width="15dp" android:layout_height="15dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/game_button2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatButton android:textColor="#ffffff" android:id="@+id/game7" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/game_7" android:drawableRight="@android:drawable/ic_input_add"/>
+                <Button android:gravity="center" android:id="@+id/game7_video" android:background="@mipmap/game_video" android:layout_width="15dp" android:layout_height="15dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/game_button2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatButton android:textColor="#ffffff" android:id="@+id/game8" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/game_8" android:drawableRight="@android:drawable/ic_input_add"/>
+                <Button android:gravity="center" android:id="@+id/game8_video" android:background="@mipmap/game_video" android:layout_width="15dp" android:layout_height="15dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

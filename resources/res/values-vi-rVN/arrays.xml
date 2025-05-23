@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="aikits">
+        <item>Game: Game For Peace</item>
+        <item>Game: PUBG Mobile(Tiếng Anh)</item>
+        <item>Game: Game For Peace(Chaoti)</item>
+        <item>Game: PUBG Mobile(Turkrish)</item>
+        <item>Game: PUBG Mobile(Tiếng Việt)</item>
+    </array>
+    <array name="dynamic_level">
+        <item>Scale:1+F1|2+F1</item>
+        <item>Scale:1+F2|2+F2</item>
+        <item>Scale:1+F3|2+F3</item>
+        <item>Scale:1+F4|2+F4</item>
+        <item>Scale:1+F5|2+F5</item>
+    </array>
+    <array name="macro_Key_more_attr">
+        <item>More:None</item>
+        <item>More:Fix lỗi đơ chuột</item>
+        <item>More:Fix lỗi đơ chuột khi lên xuống xe</item>
+    </array>
+    <array name="macro_Key_trigger_modes">
+        <item>Nhấn giữ để chạy liên tục</item>
+        <item>Nhấn để chạy 1 lần</item>
+        <item>Thả nút để chạy</item>
+    </array>
+    <array name="macro_click_list">
+        <item>Clicks:2</item>
+        <item>Clicks:3</item>
+        <item>Clicks:4</item>
+        <item>Clicks:5</item>
+        <item>Clicks:6</item>
+        <item>Clicks:7</item>
+        <item>Clicks:8</item>
+        <item>Clicks:9</item>
+    </array>
+    <array name="macro_delay">
+        <item>Delay:60ms</item>
+        <item>Delay:70ms</item>
+        <item>Delay:80ms</item>
+        <item>Delay:90ms</item>
+        <item>Delay:100ms</item>
+        <item>Delay:120ms</item>
+        <item>Delay:150ms</item>
+        <item>Delay:180ms</item>
+        <item>Delay:200ms</item>
+        <item>Delay:300ms</item>
+    </array>
+    <array name="normal_Key_trigger_modes">
+        <item>Trigger Nhấn + Thả</item>
+        <item>Trigger nhấn↓</item>
+        <item>Trigger thả↑</item>
+    </array>
+    <array name="normal_click_list">
+        <item>Nhấn Bình thường</item>
+        <item>Nhấn liên tục 8 lần/s</item>
+        <item>Nhấn liên tục 10 lần/s</item>
+        <item>Nhấn liên tục 13 lần/s</item>
+        <item>Nhấn liên tục 20 lần/s</item>
+        <item>Fix lỗi đơ chuột</item>
+        <item>Fix lỗi đơ chuột khi lên, xuống xe</item>
+    </array>
+    <array name="normal_click_list_v100">
+        <item>Nhấn Bình thường</item>
+        <item>Nhấn liên tục 8 lần/s</item>
+        <item>Nhấn liên tục 10 lần/s</item>
+        <item>Nhấn liên tục 13 lần/s</item>
+        <item>Nhấn liên tục 20 lần/s</item>
+        <item>Fix lỗi đơ chuột</item>
+        <item>Fix lỗi đơ chuột khi lên, xuống xe</item>
+        <item>Nhấn để Hiện/Ẩn Con trỏ chuột</item>
+        <item>Hiện con trỏ chuột</item>
+        <item>Ẩn con trỏ chuột</item>
+        <item>Gọi con trỏ chuột</item>
+    </array>
+    <array name="normal_click_list_v111">
+        <item>Nhấn Bình thường</item>
+        <item>Nhấn liên tục 8 lần/s</item>
+        <item>Nhấn liên tục 10 lần/s</item>
+        <item>Nhấn liên tục 13 lần/s</item>
+        <item>Nhấn liên tục 20 lần/s</item>
+        <item>Fix lỗi đơ chuột</item>
+        <item>Fix lỗi đơ chuột khi lên, xuống xe</item>
+        <item>Nhấn để Hiện/Ẩn Con trỏ chuột</item>
+        <item>Hiện con trỏ chuột</item>
+        <item>Ẩn con trỏ chuột</item>
+        <item>Gọi con trỏ chuột</item>
+        <item>Bật kích âm thanh</item>
+        <item>Bật kích âm thanh(ko ấn)</item>
+        <item>Tắt kích âm tha/nh</item>
+        <item>Tắt kích âm thanh(ko ấn)</item>
+        <item>Bật/Tắt kích âm thanh(ko ấn)</item>
+        <item>Ngồi(Default is Ctrl/C)</item>
+        <item>Nằm(Default is Z)</item>
+        <item>Bật Zoom Scope</item>
+        <item>Bật Zoom Scope (đảo màu)</item>
+        <item>Tắt Zoom Scope</item>
+        <item>Bật/Tắt Zoom Scope</item>
+        <item>Bật/Tắt Zoom Scope (đảo màu)</item>
+        <item>Tự động chuyển góc nhìn 1/3 (AI)</item>
+        <item>Nghiên người trái(giống Q)</item>
+        <item>Nghiên người phải(giống E)</item>
+        <item>Hiện/Ẩn con trỏ chuột</item>
+        <item>Hiện con trỏ chuột</item>
+        <item>Ẩn con trỏ chuột</item>
+    </array>
+    <array name="normal_click_list_v119">
+        <item>Nhấn Bình thường</item>
+        <item>Nhấn liên tục 8 lần/s</item>
+        <item>Nhấn liên tục 10 lần/s</item>
+        <item>Nhấn liên tục 13 lần/s</item>
+        <item>Nhấn liên tục 20 lần/s</item>
+        <item>Fix lỗi đơ chuột</item>
+        <item>Fix lỗi đơ chuột khi lên, xuống xe</item>
+        <item>Nhấn để Hiện/Ẩn Con trỏ chuột</item>
+        <item>Hiện con trỏ chuột</item>
+        <item>Ẩn con trỏ chuột</item>
+        <item>Gọi con trỏ chuột</item>
+        <item>Bật kích âm thanh</item>
+        <item>Bật kích âm thanh(ko ấn)</item>
+        <item>Tắt kích âm tha/nh</item>
+        <item>Tắt kích âm thanh(ko ấn)</item>
+        <item>Bật/Tắt kích âm thanh(ko ấn)</item>
+        <item>Ngồi(Default is Ctrl/C)</item>
+        <item>Nằm(Default is Z)</item>
+        <item>Bật Zoom Scope</item>
+        <item>Bật Zoom Scope (đảo màu)</item>
+        <item>Tắt Zoom Scope</item>
+        <item>Bật/Tắt Zoom Scope</item>
+        <item>Bật/Tắt Zoom Scope (đảo màu)</item>
+        <item>Tự động chuyển góc nhìn 1/3 (AI)</item>
+        <item>Nghiên người trái(giống Q)</item>
+        <item>Nghiên người phải(giống E)</item>
+        <item>Hiện/Ẩn con trỏ chuột</item>
+        <item>Hiện con trỏ chuột</item>
+        <item>Ẩn con trỏ chuột</item>
+        <item>Nhảy qua cửa(đặt ở nút nhảy)</item>
+        <item>Nhảy qua hàng rào(đặt ở nút nhảy)</item>
+        <item>特殊宏:永劫一键踏空步(放切刀上)M4</item>
+        <item>Sistem özelliklerini sil(Alt/X/Tab/Caps)</item>
+    </array>
+    <array name="normal_click_list_v75">
+        <item>Nhấn Bình thường</item>
+        <item>Nhấn liên tục 8 lần/s</item>
+        <item>Nhấn liên tục 10 lần/s</item>
+        <item>Nhấn liên tục 13 lần/s</item>
+        <item>Nhấn liên tục 20 lần/s</item>
+        <item>Fix lỗi đơ chuột</item>
+        <item>Fix lỗi đơ chuột khi lên, xuống xe</item>
+        <item>Hiện/Ẩn Con trỏ chuột</item>
+    </array>
+    <array name="slide_Key_trigger_modes">
+        <item>Nhấn nút↓ để trượt 1 lần</item>
+        <item>Thả nút↑ để trượt 1 lần</item>
+        <item>Nhấn giữ để trượt liên tục</item>
+    </array>
+</resources>

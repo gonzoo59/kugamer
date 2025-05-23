@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
+    <TextView android:textSize="12sp" android:textColor="#02f80c" android:id="@+id/dynamic_result" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:textAlignment="center"/>
+    <RelativeLayout android:id="@+id/agile_layer" android:layout_width="110dp" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_below="@+id/dynamic_result">
+        <Button android:id="@+id/btn_dynamic_crosshair" android:layout_width="20dp" android:layout_height="20dp" android:layout_weight="0" android:layout_alignParentLeft="true"/>
+        <Button android:textSize="7sp" android:textColor="@color/colorWhite" android:id="@+id/btn_dynamic_stage" android:background="@mipmap/ai_stage_off" android:layout_width="20dp" android:layout_height="20dp" android:text="" android:lineSpacingExtra="0sp" android:textAlignment="center" android:layout_marginStart="3dp" android:layout_toEndOf="@+id/btn_dynamic_crosshair"/>
+    </RelativeLayout>
+</RelativeLayout>

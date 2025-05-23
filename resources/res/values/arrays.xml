@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="aikits">
+        <item>Game: Game For Peace</item>
+        <item>Game: PUBG Mobile</item>
+        <item>Game: Game For Peace(Chaoti)</item>
+        <item>Game: PUBG Mobile(Turkrish)</item>
+        <item>Game: PUBG Mobile(Vietnamese)</item>
+    </array>
+    <array name="dynamic_level">
+        <item>Scale:1+F1|2+F1</item>
+        <item>Scale:1+F2|2+F2</item>
+        <item>Scale:1+F3|2+F3</item>
+        <item>Scale:1+F4|2+F4</item>
+        <item>Scale:1+F5|2+F5</item>
+    </array>
+    <array name="macro_Key_more_attr">
+        <item>More:None</item>
+        <item>More:Avoid View Stuck</item>
+        <item>More:Avoid car view stuck</item>
+    </array>
+    <array name="macro_Key_trigger_modes">
+        <item>Key Down Trigger Loop</item>
+        <item>Key Down Trigger once</item>
+        <item>Key Up Trigger</item>
+    </array>
+    <array name="macro_click_list">
+        <item>Dots:2</item>
+        <item>Dots:3</item>
+        <item>Dots:4</item>
+        <item>Dots:5</item>
+        <item>Dots:6</item>
+        <item>Dots:7</item>
+        <item>Dots:8</item>
+        <item>Dots:9</item>
+    </array>
+    <array name="macro_delay">
+        <item>Delay:60ms</item>
+        <item>Delay:70ms</item>
+        <item>Delay:80ms</item>
+        <item>Delay:90ms</item>
+        <item>Delay:100ms</item>
+        <item>Delay:120ms</item>
+        <item>Delay:150ms</item>
+        <item>Delay:180ms</item>
+        <item>Delay:200ms</item>
+        <item>Delay:300ms</item>
+    </array>
+    <array name="normal_Key_trigger_modes">
+        <item>Key Down+Up</item>
+        <item>Key Down Trigger↓</item>
+        <item>Key Up Trigger↑</item>
+    </array>
+    <array name="normal_click_list">
+        <item>Normal Click</item>
+        <item>Continues Click 8/s</item>
+        <item>Continues Click 10/s</item>
+        <item>Continues Click 13/s</item>
+        <item>Continues Click 20/s</item>
+        <item>Avoid view stuck</item>
+        <item>Avoid car view stuck</item>
+    </array>
+    <array name="normal_click_list_v100">
+        <item>Normal Click</item>
+        <item>Continues Click 8/s</item>
+        <item>Continues Click 10/s</item>
+        <item>Continues Click 13/s</item>
+        <item>Continues Click 20/s</item>
+        <item>Avoid view stuck</item>
+        <item>Avoid car view stuck</item>
+        <item>Toggle Show/Hide Cursor</item>
+        <item>Show Cursor</item>
+        <item>Hide Cursor</item>
+        <item>Recall Cursor(show here)</item>
+    </array>
+    <array name="normal_click_list_v111">
+        <item>Normal Click</item>
+        <item>Continues Click 8/s</item>
+        <item>Continues Click 10/s</item>
+        <item>Continues Click 13/s</item>
+        <item>Continues Click 20/s</item>
+        <item>Avoid view stuck</item>
+        <item>Avoid car view stuck</item>
+        <item>Toggle Show/Hide Cursor</item>
+        <item>Show Cursor</item>
+        <item>Hide Cursor</item>
+        <item>Recall Cursor(show here)</item>
+        <item>Smart Vol ON</item>
+        <item>Smart Vol ON(no click)</item>
+        <item>Smart Vol OFF</item>
+        <item>Smart Vol OFF(no click)</item>
+        <item>Smart Vol ON/OFF(no click)</item>
+        <item>Squt(Default is Ctrl/C)</item>
+        <item>Fall(Default is Z)</item>
+        <item>ZOOM ON(no click)</item>
+        <item>ZOOM ON Hunting(no click)</item>
+        <item>ZOOM OFF(no click)</item>
+        <item>ZOOM Toggle On/OFF(no click)</item>
+        <item>ZOOM Toggle On/OFF Hunting(no click)</item>
+        <item>Smart 1st/3rd person(AI)</item>
+        <item>Left Probe/Peek(Like Q)</item>
+        <item>Right Probe/Peek(Like E)</item>
+        <item>Toggle Show/Hide Cursor(no click)</item>
+        <item>Show Cursor(no click)</item>
+        <item>Hide Cursor(no click)</item>
+    </array>
+    <array name="normal_click_list_v119">
+        <item>Normal Click</item>
+        <item>Continues Click 8/s</item>
+        <item>Continues Click 10/s</item>
+        <item>Continues Click 13/s</item>
+        <item>Continues Click 20/s</item>
+        <item>Avoid view stuck</item>
+        <item>Avoid car view stuck</item>
+        <item>Toggle Show/Hide Cursor</item>
+        <item>Show Cursor</item>
+        <item>Hide Cursor</item>
+        <item>Recall Cursor(show here)</item>
+        <item>Smart Vol ON</item>
+        <item>Smart Vol ON(no click)</item>
+        <item>Smart Vol OFF</item>
+        <item>Smart Vol OFF(no click)</item>
+        <item>Smart Vol ON/OFF(no click)</item>
+        <item>Squt(Default is Ctrl/C)</item>
+        <item>Fall(Default is Z)</item>
+        <item>ZOOM ON(no click)</item>
+        <item>ZOOM ON Hunting(no click)</item>
+        <item>ZOOM OFF(no click)</item>
+        <item>ZOOM Toggle On/OFF(no click)</item>
+        <item>ZOOM Toggle On/OFF Hunting(no click)</item>
+        <item>Smart 1st/3rd person(AI)</item>
+        <item>Left Probe/Peek(Like Q)</item>
+        <item>Right Probe/Peek(Like E)</item>
+        <item>Toggle Show/Hide Cursor(no click)</item>
+        <item>Show Cursor(no click)</item>
+        <item>Hide Cursor(no click)</item>
+        <item>Jump Door(Place on jump key)</item>
+        <item>Jump to Roof(Place on jump key)</item>
+        <item>Macro:Only For Chinese Game</item>
+        <item>Remove system built-in attributes(Alt/X/Tab/Caps)</item>
+    </array>
+    <array name="normal_click_list_v75">
+        <item>Normal Click</item>
+        <item>Continues Click 8/s</item>
+        <item>Continues Click 10/s</item>
+        <item>Continues Click 13/s</item>
+        <item>Continues Click 20/s</item>
+        <item>Avoid view stuck</item>
+        <item>Avoid car view stuck</item>
+        <item>Normal Click+Show/Hide Cursor</item>
+    </array>
+    <array name="slide_Key_trigger_modes">
+        <item>Key Down Slide once↓</item>
+        <item>Key Up Slide once↑</item>
+        <item>Hold to Repeat Slide</item>
+    </array>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/padding_left" android:paddingEnd="@dimen/padding_right">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_ota_top" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/ll_ota_bottom" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_weight="3">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="@dimen/text_14sp" android:textColor="#484848" android:gravity="center_vertical" android:id="@+id/tv_connect_dev_name_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_name"/>
+            <TextView android:textSize="@dimen/text_14sp" android:textColor="#484848" android:gravity="center_vertical" android:id="@+id/tv_connect_dev_name_vale" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="@dimen/text_14sp" android:textColor="#484848" android:gravity="center_vertical" android:id="@+id/tv_connect_dev_address_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/device_addr"/>
+            <TextView android:textSize="@dimen/text_14sp" android:textColor="#484848" android:gravity="center_vertical" android:id="@+id/tv_connect_dev_address_vale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="@dimen/text_14sp" android:textColor="#484848" android:gravity="center_vertical" android:id="@+id/tv_connect_dev_type_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/device_type"/>
+            <TextView android:textSize="@dimen/text_14sp" android:textColor="#484848" android:gravity="center_vertical" android:id="@+id/tv_connect_dev_type_vale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="@dimen/text_14sp" android:textColor="#484848" android:gravity="center_vertical" android:id="@+id/tv_connect_status_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/device_status"/>
+            <TextView android:textSize="@dimen/text_14sp" android:textColor="@color/colorAccent" android:gravity="center_vertical" android:id="@+id/tv_connect_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/device_status_disconnected"/>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView android:id="@+id/cv_ota_file_container" android:background="@color/bg_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" app:cardCornerRadius="8dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/text_14sp" android:textColor="@color/text_black" android:gravity="center_vertical" android:id="@+id/tv_file_selection" android:layout_width="match_parent" android:layout_height="@dimen/item_height" android:text="@string/file_selection"/>
+                <ImageView android:id="@+id/iv_refresh_file_list" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/ic_refresh_blue" android:layout_alignTop="@+id/tv_file_selection" android:layout_alignBottom="@+id/tv_file_selection" android:layout_alignParentEnd="true"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_file_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10dp" android:layout_below="@+id/tv_file_selection" android:overScrollMode="never"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_ota_bottom" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="20dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_ota_top" app:layout_constraintVertical_weight="1.2">
+        <LinearLayout android:gravity="bottom|center_horizontal" android:orientation="horizontal" android:id="@+id/ll_upgrade_tips" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="bottom" android:id="@+id/tv_upgrade_tips" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="20dp" android:text="@string/ota_upgrade_not_started"/>
+            <TextView android:gravity="bottom|center_horizontal" android:id="@+id/tv_upgrade_progress" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/padding_left" android:paddingEnd="@dimen/padding_right"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/bar_upgrade" android:layout_width="match_parent" android:layout_height="@dimen/item_height" android:max="100" style="?android:attr/progressBarStyleHorizontal"/>
+        <Button android:textColor="@color/text_white" android:id="@+id/btn_upgrade" android:background="@drawable/dbg_btn_unenable" android:layout_width="match_parent" android:layout_height="@dimen/item_height" android:text="@string/tab_upgrade"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

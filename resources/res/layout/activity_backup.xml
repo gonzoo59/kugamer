@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/m_layoutRoot" android:background="@mipmap/bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/pre_set_table" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_input_window" android:layout_width="480dp" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginBottom="10dp" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+                <Button android:textSize="10sp" android:textColor="#ffffff" android:id="@+id/m_btnBackup" android:background="@drawable/check_box_on" android:layout_width="50dp" android:layout_height="30dp" android:layout_marginLeft="20dp" android:text="@string/backup_new" android:layout_centerVertical="true"/>
+                <Button android:textSize="10sp" android:textColor="#ffffff" android:id="@+id/m_btnRestore" android:background="@drawable/check_box_on" android:layout_width="50dp" android:layout_height="30dp" android:layout_marginLeft="8dp" android:text="@string/backup_restore" android:layout_centerVertical="true"/>
+                <Button android:textSize="10sp" android:textColor="#ffffff" android:id="@+id/m_btnDelete" android:background="@drawable/check_box_on" android:layout_width="50dp" android:layout_height="30dp" android:layout_marginLeft="8dp" android:text="@string/delete" android:layout_centerVertical="true"/>
+                <Button android:textSize="10sp" android:textColor="#ffffff" android:id="@+id/m_btnShare" android:background="@drawable/check_box_on" android:layout_width="50dp" android:layout_height="30dp" android:layout_marginLeft="8dp" android:text="@string/backup_share" android:layout_centerVertical="true"/>
+                <Button android:textSize="10sp" android:textColor="#ffffff" android:id="@+id/m_btnExit" android:background="@drawable/check_box_on" android:layout_width="50dp" android:layout_height="30dp" android:layout_marginLeft="50dp" android:text="@string/close_text" android:layout_centerVertical="true"/>
+            </LinearLayout>
+            <TextView android:textColor="@color/colorAccent" android:layout_gravity="center" android:id="@+id/m_textTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/backupTitle" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="5dp" android:scrollbarAlwaysDrawVerticalTrack="true" android:textColor="@color/colorAccent" android:id="@+id/m_backFile" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fadeScrollbars="false"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_input_window" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:layout_marginBottom="10dp" android:layout_centerInParent="true">
+            <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="5dp" android:scrollbarAlwaysDrawVerticalTrack="true" android:textColor="@color/colorAccent" android:id="@+id/m_fileDetail" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:fadeScrollbars="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

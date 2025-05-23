@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root" android:background="#e6000000" android:layout_width="150dp" android:layout_height="wrap_content" android:layoutDirection="ltr">
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="left" android:id="@+id/close" android:background="@mipmap/close_btn" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/scale_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dynamic_scale" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <Spinner android:id="@+id/m_comLevel" android:background="#494949" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" style="@style/Widget.AppCompat.Spinner.DropDown"/>
+        <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/next_level" android:background="@mipmap/arrow3_right" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="5dp"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/main_sens_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_sens" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <TextView android:textSize="10sp" android:textColor="#00ff00" android:id="@+id/main_sens_value" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/main_sens_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/main_sens_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/dynamic_adjust" android:background="@mipmap/ai_stage_off" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/squt_layout" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/c_sens_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dynamic_c_sens_title" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <TextView android:textSize="10sp" android:textColor="#00ff00" android:id="@+id/c_sens_value" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/c_sens_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/c_sens_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/fall_layout" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/z_sens_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dynamic_z_sens_title" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <TextView android:textSize="10sp" android:textColor="#00ff00" android:id="@+id/z_sens_value" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/z_sens_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/z_sens_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/stage1_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stage1" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <androidx.appcompat.widget.AppCompatSeekBar android:textColor="#ffffff" android:id="@+id/stage1_rate" android:layout_width="0dp" android:layout_height="wrap_content" android:max="100" android:progress="50" android:progressDrawable="@drawable/ai_stage_seekbar_style" android:layout_weight="1"/>
+        <TextView android:textSize="9sp" android:textColor="#00ff00" android:id="@+id/stage1_value" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage1_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage1_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/stage2_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stage2" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <androidx.appcompat.widget.AppCompatSeekBar android:textColor="#ffffff" android:id="@+id/stage2_rate" android:layout_width="0dp" android:layout_height="wrap_content" android:max="100" android:progress="50" android:progressDrawable="@drawable/ai_stage_seekbar_style" android:layout_weight="1"/>
+        <TextView android:textSize="9sp" android:textColor="#00ff00" android:id="@+id/stage2_value" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage2_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage2_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/stage3_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stage3" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <androidx.appcompat.widget.AppCompatSeekBar android:textColor="#ffffff" android:id="@+id/stage3_rate" android:layout_width="0dp" android:layout_height="wrap_content" android:max="100" android:progress="50" android:progressDrawable="@drawable/ai_stage_seekbar_style" android:layout_weight="1"/>
+        <TextView android:textSize="9sp" android:textColor="#00ff00" android:id="@+id/stage3_value" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage3_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage3_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/stage4_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stage4" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <androidx.appcompat.widget.AppCompatSeekBar android:textColor="#ffffff" android:id="@+id/stage4_rate" android:layout_width="0dp" android:layout_height="wrap_content" android:max="100" android:progress="50" android:progressDrawable="@drawable/ai_stage_seekbar_style" android:layout_weight="1"/>
+        <TextView android:textSize="9sp" android:textColor="#00ff00" android:id="@+id/stage4_value" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage4_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage4_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/stage5_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stage5" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <androidx.appcompat.widget.AppCompatSeekBar android:textColor="#ffffff" android:id="@+id/stage5_rate" android:layout_width="0dp" android:layout_height="wrap_content" android:max="100" android:progress="50" android:progressDrawable="@drawable/ai_stage_seekbar_style" android:layout_weight="1"/>
+        <TextView android:textSize="9sp" android:textColor="#00ff00" android:id="@+id/stage5_value" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage5_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage5_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/stage6_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stage6" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <androidx.appcompat.widget.AppCompatSeekBar android:textColor="#ffffff" android:id="@+id/stage6_rate" android:layout_width="0dp" android:layout_height="wrap_content" android:max="100" android:progress="50" android:progressDrawable="@drawable/ai_stage_seekbar_style" android:layout_weight="1"/>
+        <TextView android:textSize="9sp" android:textColor="#00ff00" android:id="@+id/stage6_value" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage6_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage6_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

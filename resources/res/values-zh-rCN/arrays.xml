@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="aikits">
+        <item>适配游戏:和平精英</item>
+        <item>适配游戏:PUBG国际版</item>
+        <item>适配游戏:和平精英超体模式</item>
+        <item>适配游戏:PUBG国际版(土耳其语)</item>
+        <item>适配游戏:PUBG国际版(越南语)</item>
+    </array>
+    <array name="dynamic_level">
+        <item>F1档</item>
+        <item>F2档</item>
+        <item>F3档</item>
+        <item>F4档</item>
+        <item>F5档</item>
+    </array>
+    <array name="macro_Key_more_attr">
+        <item>属性:无</item>
+        <item>属性:防卡视角</item>
+        <item>属性:上下车防卡视角</item>
+    </array>
+    <array name="macro_Key_trigger_modes">
+        <item>按下触发-按住循环</item>
+        <item>按下触发一次</item>
+        <item>抬起触发一次</item>
+    </array>
+    <array name="macro_click_list">
+        <item>点击数：2</item>
+        <item>点击数：3</item>
+        <item>点击数：4</item>
+        <item>点击数：5</item>
+        <item>点击数：6</item>
+        <item>点击数：7</item>
+        <item>点击数：8</item>
+        <item>点击数：9</item>
+    </array>
+    <array name="macro_delay">
+        <item>点击延迟:60毫秒</item>
+        <item>点击延迟:70毫秒</item>
+        <item>点击延迟:80毫秒</item>
+        <item>点击延迟:90毫秒</item>
+        <item>点击延迟:100毫秒</item>
+        <item>点击延迟:120毫秒</item>
+        <item>点击延迟:150毫秒</item>
+        <item>点击延迟:180毫秒</item>
+        <item>点击延迟:200毫秒</item>
+        <item>点击延迟:300毫秒</item>
+    </array>
+    <array name="normal_Key_trigger_modes">
+        <item>普通触发模式↓↑</item>
+        <item>仅按下触发↓</item>
+        <item>仅抬起触发↑</item>
+    </array>
+    <array name="normal_click_list">
+        <item>普通点击(无属性)</item>
+        <item>连点8次/秒</item>
+        <item>连点10次/秒</item>
+        <item>连点13次/秒</item>
+        <item>连点20次/秒</item>
+        <item>防卡视角</item>
+        <item>上下车换座专用(勿乱用，按下会暂停走路)</item>
+    </array>
+    <array name="normal_click_list_v100">
+        <item>普通点击(无属性)</item>
+        <item>连点8次/秒</item>
+        <item>连点10次/秒</item>
+        <item>连点13次/秒</item>
+        <item>连点20次/秒</item>
+        <item>防卡视角</item>
+        <item>上下车换座专用(勿乱用，按下会暂停走路)</item>
+        <item>显示/隐藏指针</item>
+        <item>显示指针</item>
+        <item>隐藏指针</item>
+        <item>召唤指针(按键位置出指针)</item>
+    </array>
+    <array name="normal_click_list_v111">
+        <item>普通点击(无属性)</item>
+        <item>连点8次/秒</item>
+        <item>连点10次/秒</item>
+        <item>连点13次/秒</item>
+        <item>连点20次/秒</item>
+        <item>防卡视角</item>
+        <item>上下车换座专用(勿乱用，按下会暂停走路)</item>
+        <item>显示/隐藏指针</item>
+        <item>显示指针</item>
+        <item>隐藏指针</item>
+        <item>召唤指针(按键位置出指针)</item>
+        <item>顺风耳开</item>
+        <item>顺风耳开(不点屏幕)</item>
+        <item>顺风耳关</item>
+        <item>顺风耳关(不点屏幕)</item>
+        <item>顺风耳开/关(不点屏幕)</item>
+        <item>蹲(压枪关联，设置后Ctrl/C不再为蹲)</item>
+        <item>趴(压枪关联，设置后Z不再为趴)</item>
+        <item>千里眼-开(不点屏幕)</item>
+        <item>千里眼狩猎镜-开(不点屏幕)</item>
+        <item>千里眼-关(不点屏幕)</item>
+        <item>千里眼-开/关(不点屏幕)</item>
+        <item>千里眼狩猎镜-开/关(不点屏幕)</item>
+        <item>智能第一/三人称(AI模式有效)</item>
+        <item>左探头键(类似Q)</item>
+        <item>右探头键(类似E)</item>
+        <item>显示/隐藏指针(不点屏幕)</item>
+        <item>显示指针(不点屏幕)</item>
+        <item>隐藏指针(不点屏幕)</item>
+    </array>
+    <array name="normal_click_list_v119">
+        <item>普通点击(无属性)</item>
+        <item>连点8次/秒</item>
+        <item>连点10次/秒</item>
+        <item>连点13次/秒</item>
+        <item>连点20次/秒</item>
+        <item>防卡视角</item>
+        <item>上下车换座专用(勿乱用，按下会暂停走路)</item>
+        <item>显示/隐藏指针</item>
+        <item>显示指针</item>
+        <item>隐藏指针</item>
+        <item>召唤指针(按键位置出指针)</item>
+        <item>顺风耳开</item>
+        <item>顺风耳开(不点屏幕)</item>
+        <item>顺风耳关</item>
+        <item>顺风耳关(不点屏幕)</item>
+        <item>顺风耳开/关(不点屏幕)</item>
+        <item>蹲(压枪关联，设置后Ctrl/C不再为蹲)</item>
+        <item>趴(压枪关联，设置后Z不再为趴)</item>
+        <item>千里眼-开(不点屏幕)</item>
+        <item>千里眼狩猎镜-开(不点屏幕)</item>
+        <item>千里眼-关(不点屏幕)</item>
+        <item>千里眼-开/关(不点屏幕)</item>
+        <item>千里眼狩猎镜-开/关(不点屏幕)</item>
+        <item>智能第一/三人称(AI模式有效)</item>
+        <item>左探头键(类似Q)</item>
+        <item>右探头键(类似E)</item>
+        <item>显示/隐藏指针(不点屏幕)</item>
+        <item>显示指针(不点屏幕)</item>
+        <item>隐藏指针(不点屏幕)</item>
+        <item>特殊宏:一键跳上门(放跳跃上)</item>
+        <item>特殊宏:一键跳上房顶(放跳跃上)</item>
+        <item>特殊宏:永劫一键踏空步(放切刀上)M4</item>
+        <item>去掉系统自带属性(Alt/X/Tab/Caps)</item>
+    </array>
+    <array name="normal_click_list_v75">
+        <item>普通点击(无属性)</item>
+        <item>连点8次/秒</item>
+        <item>连点10次/秒</item>
+        <item>连点13次/秒</item>
+        <item>连点20次/秒</item>
+        <item>防卡视角</item>
+        <item>上下车换座专用(勿乱用，按下会暂停走路)</item>
+        <item>显示/隐藏指针</item>
+    </array>
+    <array name="slide_Key_trigger_modes">
+        <item>按下滑一次↓</item>
+        <item>抬起滑一次↑</item>
+        <item>按住连续滑动</item>
+    </array>
+</resources>

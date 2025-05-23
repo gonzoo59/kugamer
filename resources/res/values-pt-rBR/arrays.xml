@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="aikits">
+        <item>Jogo: Game For Peace</item>
+        <item>Jogo: PUBG Mobile</item>
+        <item>Jogo: Game For Peace(Chaoti)</item>
+        <item>Jogo: PUBG Mobile(Turkrish)</item>
+        <item>Game: PUBG Mobile(Vietnamese)</item>
+    </array>
+    <array name="dynamic_level">
+        <item>Escala:1+F1|2+F1</item>
+        <item>Escala:1+F2|2+F2</item>
+        <item>Escala:1+F3|2+F3</item>
+        <item>Escala:1+F4|2+F4</item>
+        <item>Escala:1+F5|2+F5</item>
+    </array>
+    <array name="macro_Key_more_attr">
+        <item>Mais:Nenhum</item>
+        <item>Mais:Evitar travamento de visão</item>
+        <item>Mais:Evitar travamento de visão do carro</item>
+    </array>
+    <array name="macro_Key_trigger_modes">
+        <item>Tecla Para Baixo Trigger Loop</item>
+        <item>Tecla Para Baixo Trigger uma vez</item>
+        <item>Tecla Para Cima Trigger</item>
+    </array>
+    <array name="macro_click_list">
+        <item>Pontos:2</item>
+        <item>Pontos:3</item>
+        <item>Pontos:4</item>
+        <item>Pontos:5</item>
+        <item>Pontos:6</item>
+        <item>Pontos:7</item>
+        <item>Pontos:8</item>
+        <item>Pontos:9</item>
+    </array>
+    <array name="macro_delay">
+        <item>Atraso:60ms</item>
+        <item>Atraso:70ms</item>
+        <item>Atraso:80ms</item>
+        <item>Atraso:90ms</item>
+        <item>Atraso:100ms</item>
+        <item>Atraso:120ms</item>
+        <item>Atraso:150ms</item>
+        <item>Atraso:180ms</item>
+        <item>Atraso:200ms</item>
+        <item>Atraso:300ms</item>
+    </array>
+    <array name="normal_Key_trigger_modes">
+        <item>Tecla Para Baixo+Para Cima</item>
+        <item>Tecla Para Baixo Trigger</item>
+        <item>Tecla Para Cima Trigger</item>
+    </array>
+    <array name="normal_click_list">
+        <item>Clique Normal</item>
+        <item>Clique Contínuo 8/s</item>
+        <item>Clique Contínuo 10/s</item>
+        <item>Clique Contínuo 13/s</item>
+        <item>Clique Contínuo 20/s</item>
+        <item>Evitar visão travada</item>
+        <item>Evitar visão de carro travada</item>
+    </array>
+    <array name="normal_click_list_v100">
+        <item>Clique Normal</item>
+        <item>Clique Contínuo 8/s</item>
+        <item>Clique Contínuo 10/s</item>
+        <item>Clique Contínuo 13/s</item>
+        <item>Clique Contínuo 20/s</item>
+        <item>Evitar visão travada</item>
+        <item>Evitar visão de carro travada</item>
+        <item>Alternar Mostrar/Ocultar Cursor</item>
+        <item>Mostrar Cursor</item>
+        <item>Ocultar Cursor</item>
+        <item>Relembrar Cursor (mostrar aqui)</item>
+    </array>
+    <array name="normal_click_list_v111">
+        <item>Clique Normal</item>
+        <item>Clique Contínuo 8/s</item>
+        <item>Clique Contínuo 10/s</item>
+        <item>Clique Contínuo 13/s</item>
+        <item>Clique Contínuo 20/s</item>
+        <item>Evitar travamento de visão</item>
+        <item>Evitar travamento de visão do carro</item>
+        <item>Alternar Mostrar/Ocultar Cursor</item>
+        <item>Mostrar Cursor</item>
+        <item>Ocultar Cursor</item>
+        <item>Rechamar Cursor(mostrar aqui)</item>
+        <item>Vol inteligente LIGADO</item>
+        <item>Vol inteligente LIGADO (sem clique)</item>
+        <item>Vol inteligente DESLIGADO</item>
+        <item>Vol inteligente DESLIGADO (sem clique)</item>
+        <item>Vol inteligente LIGADO/DESLIGADO (sem clique)</item>
+        <item>Squt (Padrão é Ctrl/C)</item>
+        <item>Cair (Padrão é Z)</item>
+        <item>ZOOM LIGADO (sem clique)</item>
+        <item>ZOOM LIGADO Caça (sem clique)</item>
+        <item>ZOOM DESLIGADO (sem clique)</item>
+        <item>ZOOM Alternar LIGADO/DESLIGADO (sem clique)</item>
+        <item>ZOOM Alternar LIGADO/DESLIGADO Caça (sem clique)</item>
+        <item>Pessoa 1ª/3ª Inteligente (IA)</item>
+        <item>Procurar/Espreitar à Esquerda (Como Q)</item>
+        <item>Procurar/Espreitar à Direita (Como E)</item>
+        <item>Alternar Mostrar/Ocultar Cursor (sem clique)</item>
+        <item>Mostrar Cursor (sem clique)</item>
+        <item>Ocultar Cursor (sem clique)</item>
+    </array>
+    <array name="normal_click_list_v119">
+        <item>Clique Normal</item>
+        <item>Clique Contínuo 8/s</item>
+        <item>Clique Contínuo 10/s</item>
+        <item>Clique Contínuo 13/s</item>
+        <item>Clique Contínuo 20/s</item>
+        <item>Evitar travamento de visão</item>
+        <item>Evitar travamento de visão do carro</item>
+        <item>Alternar Mostrar/Ocultar Cursor</item>
+        <item>Mostrar Cursor</item>
+        <item>Ocultar Cursor</item>
+        <item>Rechamar Cursor(mostrar aqui)</item>
+        <item>Vol inteligente LIGADO</item>
+        <item>Vol inteligente LIGADO (sem clique)</item>
+        <item>Vol inteligente DESLIGADO</item>
+        <item>Vol inteligente DESLIGADO (sem clique)</item>
+        <item>Vol inteligente LIGADO/DESLIGADO (sem clique)</item>
+        <item>Squt (Padrão é Ctrl/C)</item>
+        <item>Cair (Padrão é Z)</item>
+        <item>ZOOM LIGADO (sem clique)</item>
+        <item>ZOOM LIGADO Caça (sem clique)</item>
+        <item>ZOOM DESLIGADO (sem clique)</item>
+        <item>ZOOM Alternar LIGADO/DESLIGADO (sem clique)</item>
+        <item>ZOOM Alternar LIGADO/DESLIGADO Caça (sem clique)</item>
+        <item>Pessoa 1ª/3ª Inteligente (IA)</item>
+        <item>Procurar/Espreitar à Esquerda (Como Q)</item>
+        <item>Procurar/Espreitar à Direita (Como E)</item>
+        <item>Alternar Mostrar/Ocultar Cursor (sem clique)</item>
+        <item>Mostrar Cursor (sem clique)</item>
+        <item>Ocultar Cursor (sem clique)</item>
+        <item>Pular Porta (Colocar na tecla de pulo)</item>
+        <item>Pular para o Telhado (Colocar na tecla de pulo)</item>
+        <item>特殊宏:永劫一键踏空步(放切刀上)M4</item>
+        <item>Gỡ bỏ thuộc tính hệ thống(Alt/X/Tab/Caps)</item>
+    </array>
+    <array name="normal_click_list_v75">
+        <item>Clique Normal</item>
+        <item>Clique Contínuo 8/s</item>
+        <item>Clique Contínuo 10/s</item>
+        <item>Clique Contínuo 13/s</item>
+        <item>Clique Contínuo 20/s</item>
+        <item>Evitar visão travada</item>
+        <item>Evitar visão de carro travada</item>
+        <item>Clique Normal+Mostrar/Ocultar Cursor</item>
+    </array>
+</resources>

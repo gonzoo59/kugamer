@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root" android:background="#e6000000" android:paddingLeft="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/m_layoutTitle" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+        <TextView android:textSize="9sp" android:textColor="#06f326" android:gravity="center" android:id="@+id/m_textTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_setting_title" android:layout_weight="1"/>
+        <Button android:textSize="12sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/m_btnQuestion" android:background="@mipmap/play" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="10dp" android:textAlignment="center"/>
+        <Button android:layout_gravity="right" android:id="@+id/close_window" android:background="@mipmap/close_btn" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="10dp" android:layout_marginRight="3dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Switch android:textSize="10sp" android:textColor="#ffeb3b" android:id="@+id/m_swCursorContinuesShoot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cursor_continues_click" android:layoutDirection="ltr"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/m_layoutVMouseContinuesMore" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="5dp">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="5dp">
+            <TextView android:textSize="9sp" android:textColor="#ffeb3b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cursor_continues_speed" android:layout_weight="0"/>
+            <Button android:id="@+id/m_btnContinuesSpeedMinus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="3dp"/>
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/m_textContinuesSpeed" android:background="#80000000" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_marginStart="4dp"/>
+            <Button android:gravity="center" android:id="@+id/m_btnContinuesSpeedPlus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="4dp" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+        <Switch android:textSize="10sp" android:textColor="#ffeb3b" android:id="@+id/m_swMouseContinuesDisableWhileCtrlDown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/shift_down_disable_continues" android:layoutDirection="ltr"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/m_layoutAutoReverseRecoverTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+        <Switch android:textSize="10sp" android:textColor="#0aede2" android:id="@+id/m_sw235lianffa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sanliandian_title" android:layoutDirection="ltr"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/m_layout235lianfaMore" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="5dp">
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="5dp">
+            <TextView android:textSize="9sp" android:textColor="#0aede2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lianfa_time" android:layout_weight="0"/>
+            <Button android:id="@+id/m_btnShootTimeMinus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="3dp"/>
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/m_textShootTime" android:background="#80000000" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_marginStart="4dp"/>
+            <Button android:gravity="center" android:id="@+id/m_btnShootTimePlus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="4dp" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="5dp">
+            <TextView android:textSize="9sp" android:textColor="#0aede2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lianfa_up_time" android:layout_weight="0"/>
+            <Button android:id="@+id/m_btnShootStopTimeMinus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="3dp"/>
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/m_textShootStopTime" android:background="#80000000" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_marginStart="4dp"/>
+            <Button android:gravity="center" android:id="@+id/m_btnShootStopTimePlus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="4dp" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.kwgames.LineRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/key_mapping_root" android:background="#ff00ff00" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/property" android:layout_width="55dp" android:layout_height="70dp" android:text="属性"/>
+        <Button android:id="@+id/add" android:layout_width="55dp" android:layout_height="70dp" android:text="添加" android:drawableTop="@android:drawable/ic_menu_add"/>
+        <Button android:id="@+id/del" android:layout_width="60dp" android:layout_height="70dp" android:text="删除" android:drawableTop="@android:drawable/ic_menu_delete"/>
+        <Button android:id="@+id/pre_set" android:layout_width="55dp" android:layout_height="70dp" android:text="预设" android:drawableTop="@android:drawable/ic_menu_agenda"/>
+        <Button android:id="@+id/save" android:layout_width="55dp" android:layout_height="70dp" android:text="保存" android:drawableTop="@android:drawable/ic_menu_save"/>
+        <Button android:id="@+id/save_as" android:layout_width="55dp" android:layout_height="70dp" android:text="另存" android:drawableTop="@android:drawable/ic_menu_set_as"/>
+    </LinearLayout>
+</com.baidu.kwgames.LineRelativeLayout>

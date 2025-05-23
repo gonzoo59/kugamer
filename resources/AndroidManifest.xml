@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="19" android:versionName="5.25" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.baidu.kwgames" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.hardware.usb.host" android:required="false"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.USB_ACCESSORY"/>
+    <meta-data android:name="android.max_aspect" android:value="2.4"/>
+    <uses-feature android:name="android.hardware.usb.host" android:required="true"/>
+    <uses-feature android:name="android.hardware.usb.accessory"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.baidu.kwgames.App" android:screenOrientation="landscape" android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:usesCleartextTraffic="true" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="true">
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <activity android:name="com.baidu.kwgames.KeyMappingActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.baidu.kwgames.GameSelectActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.baidu.kwgames.PropertyActivity" android:exported="true" android:screenOrientation="landscape"/>
+        <activity android:name="com.baidu.kwgames.SettingActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.baidu.kwgames.FirmUpdateActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.baidu.kwgames.ChangeModeActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.baidu.kwgames.BackupActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.baidu.kwgames.RenameActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.baidu.kwgames.BaseActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.baidu.kwgames.MainActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="fontScale|layoutDirection|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|locale|mnc|mcc">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.mybp"/>
+                <data android:pathPattern=".*\\..*\\.mybp"/>
+                <data android:pathPattern=".*\\..*\\..*\\.mybp"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.mybp"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.mybp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"/>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_DETACHED"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" android:resource="@xml/accessory_filter"/>
+        </activity>
+        <service android:name="com.baidu.kwgames.FloatWindowService" android:enabled="true" android:exported="true" android:foregroundServiceType="mediaProjection"/>
+        <activity android:name="com.baidu.kwgames.ScanActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.baidu.kwgames.example2_connection.ConnectionExampleActivity"/>
+        <activity android:name="com.baidu.kwgames.example3_discovery.ServiceDiscoveryExampleActivity"/>
+        <activity android:name="com.baidu.kwgames.example4_characteristic.CharacteristicOperationExampleActivity"/>
+        <activity android:name="com.baidu.kwgames.example4_characteristic.advanced.AdvancedCharacteristicOperationExampleActivity"/>
+        <activity android:name="com.baidu.kwgames.DeviceActivity"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.baidu.kwgames.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:name="com.jieli.otasdk.activities.SettingsActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jieli.otasdk.activities.MainActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/ActivityTranslucent" android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/ActivityTranslucent" android:name="com.blankj.utilcode.util.UtilsTransActivity" android:multiprocess="true" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:name="com.blankj.utilcode.util.UtilsFileProvider" android:exported="false" android:authorities="com.baidu.kwgames.utilcode.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service android:name="com.blankj.utilcode.util.MessengerUtils.ServerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.baidu.kwgames.messenger"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService.SharedMainProcessService"/>
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService.SeparateProcessService" android:process=":filedownloader"/>
+        <activity android:theme="@style/Translucent" android:name="com.jieli.component.permission.PermissionActivity"/>
+    </application>
+</manifest>

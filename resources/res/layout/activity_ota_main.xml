@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/top_main" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="@dimen/item_height">
+        <TextView android:textSize="18sp" android:textColor="@android:color/black" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_upgrade" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_main_settings" android:padding="8dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_settings_selector" android:layout_centerVertical="true" android:layout_marginEnd="4dp" android:layout_alignParentEnd="true"/>
+        <ProgressBar android:id="@+id/bar_scan_status" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-8dp" android:layout_marginBottom="-7dp" android:indeterminate="true" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal"/>
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/bar_main_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="49dp" android:layout_alignParentBottom="true" app:itemIconTint="@drawable/tab_device" app:menu="@menu/menu_bottom_navigation"/>
+    <RadioGroup android:orientation="horizontal" android:id="@+id/rg_main" android:background="@color/bg_white" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="49dp" android:layout_alignParentBottom="true">
+        <RadioButton android:id="@+id/tab_upgrade" android:checked="true" android:text="@string/tab_upgrade" android:drawableTop="@drawable/tab_upgrade" style="@style/bottom_tab_rbtn"/>
+        <RadioButton android:id="@+id/tab_device" android:text="@string/tab_scan" android:drawableTop="@drawable/tab_device" style="@style/bottom_tab_rbtn"/>
+    </RadioGroup>
+    <com.jieli.component.ui.widget.NoScrollViewPager android:id="@+id/viewpage_main" android:background="#f2f3f7" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rg_main" android:layout_below="@+id/top_main"/>
+</RelativeLayout>

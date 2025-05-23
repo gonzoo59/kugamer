@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root" android:background="#e6000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp">
+        <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="left" android:id="@+id/close" android:background="@mipmap/close_btn" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="2dp"/>
+        <TextView android:textSize="9sp" android:textColor="#ffeb3b" android:gravity="center" android:id="@+id/macro_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/macro_time_set_title" android:layout_weight="0"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/margin" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="10dp">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffffff" android:id="@+id/main_sens_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/macro_press_time" android:layout_weight="0"/>
+        <TextView android:textSize="10sp" android:textColor="#ffeb3b" android:id="@+id/text_macro_press_time" android:background="#80000000" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/macro_press_time_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+        <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/macro_press_time_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/squt_layout" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="10dp">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffffff" android:id="@+id/c_sens_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/macro_sleep_time" android:layout_weight="0"/>
+        <TextView android:textSize="10sp" android:textColor="#ffeb3b" android:id="@+id/text_release_press_time" android:background="#80000000" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/macro_wait_time_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+        <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/macro_wait_time_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+</LinearLayout>

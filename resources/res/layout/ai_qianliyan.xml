@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root" android:background="#e6000000" android:layout_width="155dp" android:layout_height="wrap_content" android:layoutDirection="ltr">
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="9sp" android:textColor="#00ebff" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/qianliyan_title" android:layout_weight="0"/>
+        <Button android:gravity="left" android:id="@+id/close_window" android:background="@mipmap/close_btn" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/stage1_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/display_size" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <TextView android:textSize="10sp" android:textColor="#00ff00" android:id="@+id/m_textBoxSize" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/m_btnBoxSizeMinus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/m_btnBoxSizePlus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/stage2_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/qianliyan_scale" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <TextView android:textSize="10sp" android:textColor="#00ff00" android:id="@+id/m_textZoomScale" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/m_btnZoomScaleMinus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/m_btnZoomScalePlus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Switch android:textSize="10sp" android:textColor="#ffeb3b" android:id="@+id/m_swColorRevert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/qianliyan_revert" android:layoutDirection="ltr"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root" android:background="@drawable/float_msg_bg" android:layout_width="400dp" android:layout_height="250dp" android:layoutDirection="ltr">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="3dp" android:paddingTop="0dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="30dp">
+        <TextView android:textSize="13sp" android:textColor="#ffeb3b" android:id="@+id/m_textMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/switch_ai_kit_remind" android:layout_weight="0" android:layout_centerHorizontal="true" android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textColor="#ffffff" android:gravity="clip_vertical|center" android:id="@+id/m_btnOK" android:background="@drawable/round_rect" android:layout_width="70dp" android:layout_height="30dp" android:text="@string/iamknow"/>
+    </LinearLayout>
+</LinearLayout>

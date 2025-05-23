@@ -1,0 +1,2 @@
+permissions.dispatcher.processor.PermissionsProcessor
+com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor

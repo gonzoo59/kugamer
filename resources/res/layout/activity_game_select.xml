@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_width="match_parent" android:layout_height="20dp"/>
+    <GridView android:gravity="center" android:id="@+id/games" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="12dp" android:verticalSpacing="15dp" android:stretchMode="columnWidth" android:columnWidth="95dp" android:numColumns="auto_fit"/>
+    <View android:layout_width="match_parent" android:layout_height="20dp"/>
+</LinearLayout>

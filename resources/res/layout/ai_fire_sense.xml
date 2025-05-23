@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root" android:background="#e6000000" android:layout_width="155dp" android:layout_height="wrap_content" android:layoutDirection="ltr">
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="9sp" android:textColor="#ffeb3b" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/ai_fire_sense_title" android:layout_weight="0"/>
+        <Button android:gravity="left" android:id="@+id/close_window" android:background="@mipmap/close_btn" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/stage1_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/mirror1" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <TextView android:textSize="10sp" android:textColor="#00ff00" android:id="@+id/stage1_value" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage1_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage1_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/stage2_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/mirror2" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <TextView android:textSize="10sp" android:textColor="#00ff00" android:id="@+id/stage2_value" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage2_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage2_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/stage3_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/mirror3" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <TextView android:textSize="10sp" android:textColor="#00ff00" android:id="@+id/stage3_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage3_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage3_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/stage4_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/mirror4" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <TextView android:textSize="10sp" android:textColor="#00ff00" android:id="@+id/stage4_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage4_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage4_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/stage5_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/mirror6" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <TextView android:textSize="10sp" android:textColor="#00ff00" android:id="@+id/stage5_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage5_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage5_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/stage6_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/mirror8" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <TextView android:textSize="10sp" android:textColor="#00ff00" android:id="@+id/stage6_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage6_minus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/stage6_plus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

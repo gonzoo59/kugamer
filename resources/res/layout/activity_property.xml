@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@mipmap/bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.appcompat.widget.SwitchCompat android:textColor="#ffffff" android:id="@+id/normal_click" android:paddingLeft="60dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/normal_key_press" android:layout_weight="1" android:layoutDirection="ltr"/>
+        <Spinner android:id="@+id/normal_click_list" android:paddingLeft="60dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.appcompat.widget.SwitchCompat android:textColor="#ffffff" android:id="@+id/related_mouse" android:paddingLeft="60dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/relate_click" android:layout_weight="1" android:layoutDirection="ltr"/>
+        <View android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.appcompat.widget.SwitchCompat android:textColor="#ffffff" android:id="@+id/macro_click" android:paddingLeft="60dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/macro_key" android:layout_weight="1" android:layoutDirection="ltr"/>
+        <Spinner android:textColor="#ffffff" android:entries="@array/macro_click_list" android:id="@+id/macro_click_list" android:paddingLeft="60dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <View android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton android:textColor="#ffffff" android:id="@+id/cancel" android:background="@drawable/round_rect" android:layout_width="120dp" android:layout_height="wrap_content" android:text="@string/cancle"/>
+        <View android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton android:textColor="#ffffff" android:id="@+id/ok" android:background="@drawable/round_rect" android:layout_width="120dp" android:layout_height="wrap_content" android:text="@string/confirm"/>
+        <View android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

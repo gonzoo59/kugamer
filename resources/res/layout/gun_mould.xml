@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:layout_width="150dp" android:layout_height="40dp" android:layoutDirection="ltr">
+    <ImageView android:id="@+id/temp" android:background="#da1515" android:layout_width="150dp" android:layout_height="40dp" android:alpha="0.3"/>
+    <TextView android:textSize="14sp" android:textColor="#00ff00" android:layout_gravity="center" android:id="@+id/gun_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gun1"/>
+    <View android:id="@+id/select_icon" android:background="@mipmap/select" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.6"/>
+    <View android:background="@mipmap/tip" android:layout_width="7dp" android:layout_height="7dp" android:alpha="0.9"/>
+</FrameLayout>

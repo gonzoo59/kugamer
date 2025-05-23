@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#e6000000" android:layout_width="230dp" android:layout_height="wrap_content" android:layoutDirection="ltr"> android:id=&quot;@+id/root&quot; 
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/reboot_remind" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/switch_ai_kit_remind" android:layout_weight="0" android:layout_centerHorizontal="true" android:textAlignment="viewStart"/>
+    <Spinner android:id="@+id/m_comAIKit" android:background="#494949" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginTop="1dp" android:layout_below="@+id/reboot_remind" android:layout_centerHorizontal="true" style="@style/Widget.AppCompat.Spinner.DropDown"/>
+    <Button android:textSize="9dp" android:textColor="@color/colorGreen" android:id="@+id/selKit" android:background="@color/gray" android:layout_width="40dp" android:layout_height="26dp" android:layout_marginTop="1dp" android:text="@string/switch_aikit" android:layout_toRightOf="@+id/m_comAIKit" android:layout_below="@+id/reboot_remind" android:layout_centerHorizontal="true" android:textAllCaps="false"/>
+    <Button android:textSize="12sp" android:id="@+id/cancel" android:background="@mipmap/close_btn" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="2dp" android:layout_below="@+id/m_comAIKit" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/add_table" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/cancel" android:layout_centerHorizontal="true">
+        <Button android:textSize="16sp" android:id="@+id/reduce" android:background="@mipmap/minus_rect" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="20dp" style="@style/Widget.AppCompat.Button"/>
+        <Button android:textSize="16sp" android:id="@+id/add" android:background="@mipmap/plus_rect" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="140dp" android:layout_height="100dp" android:layout_below="@+id/add_table" android:layout_centerHorizontal="true">
+        <Button android:id="@+id/right" android:background="@mipmap/move_right" android:layout_width="35dp" android:layout_height="35dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <Button android:id="@+id/left" android:background="@mipmap/move_right" android:layout_width="35dp" android:layout_height="35dp" android:layout_centerVertical="true" android:rotation="-180"/>
+        <Button android:id="@+id/up" android:background="@mipmap/move_right" android:layout_width="35dp" android:layout_height="35dp" android:layout_centerHorizontal="true" android:rotation="-90"/>
+        <Button android:id="@+id/down" android:background="@mipmap/move_right" android:layout_width="35dp" android:layout_height="35dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:rotation="90"/>
+    </RelativeLayout>
+    <Button android:textSize="10sp" android:id="@+id/AICommit" android:layout_width="74dp" android:layout_height="32dp" android:layout_marginTop="30dp" android:text="@string/save_AI" android:textAllCaps="false"/>
+    <Button android:textSize="12sp" android:textColor="@color/colorGreen" android:id="@+id/gunPartsAI" android:background="@mipmap/parts_ai_off" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="1dp" android:button="@drawable/checkbox" android:layout_below="@+id/selKit" android:layout_marginStart="11dp" android:layout_toEndOf="@+id/cancel"/>
+</RelativeLayout>

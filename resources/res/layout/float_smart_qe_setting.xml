@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root" android:background="#e6000000" android:paddingLeft="2dp" android:layout_width="250dp" android:layout_height="wrap_content" android:layoutDirection="ltr">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/m_layoutTitle" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+        <TextView android:textSize="9sp" android:textColor="#06f326" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_qe_setting_title" android:layout_weight="1"/>
+        <Button android:textSize="12sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/m_btnQuestion" android:background="@mipmap/play" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="10dp" android:textAlignment="center"/>
+        <Button android:layout_gravity="right" android:id="@+id/close_window" android:background="@mipmap/close_btn" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="10dp" android:layout_marginRight="3dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Switch android:textSize="10sp" android:textColor="#ffeb3b" android:id="@+id/m_swCloseScope" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_qe_close_scope" android:layoutDirection="ltr"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/m_layoutAutoReverse" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Switch android:textSize="10sp" android:textColor="#ffeb3b" android:id="@+id/m_swReverse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_qe_reverse" android:layoutDirection="ltr"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/m_layoutAutoReverseRecover" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Switch android:textSize="10sp" android:textColor="#ffeb3b" android:id="@+id/m_swReverseAutoRecover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_qe_reverse_auto_recover" android:layoutDirection="ltr"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/m_layoutAutoReverseRecoverTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="5dp">
+        <TextView android:textSize="9sp" android:textColor="#ffeb3b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_qe_reverse_auto_recover_time" android:layout_weight="0"/>
+        <Button android:id="@+id/m_btnMinus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/m_textRecoverTime" android:background="#80000000" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="20dp" android:layout_height="wrap_content" android:text="0" android:layout_marginStart="4dp"/>
+        <Button android:gravity="center" android:id="@+id/m_btnPlus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="4dp" android:layout_marginStart="4dp"/>
+    </LinearLayout>
+</LinearLayout>

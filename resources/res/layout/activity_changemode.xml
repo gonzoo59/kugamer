@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/m_layoutRoot" android:background="@mipmap/bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+    <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginStart="30dp" android:layout_marginEnd="10dp" android:layout_alignParentStart="true" android:layout_alignParentEnd="false">
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Spinner android:id="@+id/m_comMode" android:background="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/Widget.AppCompat.Spinner.DropDown"/>
+            <Button android:textSize="20sp" android:textColor="@color/colorWhite" android:id="@+id/m_btnModeVideo" android:background="@mipmap/play" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="0"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:textSize="20sp" android:textColor="@color/colorWhite" android:id="@+id/btn_touping_question" android:background="@mipmap/game_video" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="10dp" android:layout_weight="0"/>
+                <androidx.appcompat.widget.SwitchCompat android:textColor="#ffffff" android:id="@+id/m_touping" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/toupingmode" android:layoutDirection="ltr"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@+id/m_linerCastInfo" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <EditText android:textColor="@color/colorWhite" android:id="@+id/edit_display_x" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:text="666" android:inputType="number"/>
+                <EditText android:textColor="@color/colorWhite" android:id="@+id/edit_display_y" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:text="666" android:inputType="number"/>
+                <TextView android:textColor="@color/colorWhite" android:id="@+id/textMulti" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X" android:layout_weight="1"/>
+                <TextView android:textColor="@color/colorWhite" android:id="@+id/displayRes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/touping_display_res" android:layout_weight="1"/>
+                <androidx.appcompat.widget.SwitchCompat android:textColor="#ffffff" android:id="@+id/m_checkToDisplay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/touping_2_display" android:layoutDirection="ltr"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.SwitchCompat android:textColor="#ffffff" android:id="@+id/m_usbAudio" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:text="@string/USBAudio" android:textAlignment="center" android:layoutDirection="ltr"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.SwitchCompat android:textColor="#ffffff" android:id="@+id/m_lol" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:text="@string/LOLEdition" android:textDirection="locale" android:textAlignment="center" android:layoutDirection="ltr"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.SwitchCompat android:textColor="#ffffff" android:id="@+id/m_minecraft" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:text="@string/MinecraftEdition" android:textAlignment="center" android:layoutDirection="ltr"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.SwitchCompat android:textColor="#ffffff" android:id="@+id/m_hardtimer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:text="@string/hard_acc" android:textAlignment="center" android:layoutDirection="ltr"/>
+        </TableRow>
+        <TableRow android:id="@+id/m_tableRowUSBSpeed" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textColor="@color/colorWhite" android:id="@+id/m_textUSBSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/usb_speed_title" android:layout_weight="0"/>
+            <Button android:textSize="10sp" android:textColor="#ffffff" android:id="@+id/m_btnUSBSpeed" android:background="@drawable/round_rect" android:layout_width="60dp" android:layout_height="22dp" android:layout_marginRight="2dp" android:layout_weight="1" android:textAllCaps="false"/>
+        </TableRow>
+        <TableRow android:id="@+id/m_tableRowRandomBleName" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@+id/m_linerRandomBleName" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.SwitchCompat android:textColor="#ffffff" android:id="@+id/m_checkRandomBleName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/random_ble_name" android:layoutDirection="ltr"/>
+                <EditText android:textColor="@color/colorWhite" android:id="@+id/m_editRandownBleName" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:text="" android:singleLine="true" android:inputType="number"/>
+                <Button android:textSize="10sp" android:textColor="#ffffff" android:id="@+id/m_btnGenerateBleName" android:background="@drawable/round_rect" android:layout_width="wrap_content" android:layout_height="22dp" android:layout_marginRight="2dp" android:text="@string/generate_bt_name" android:layout_weight="1" android:textAllCaps="false"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="80dp" android:layout_alignParentBottom="true">
+        <View android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton android:textColor="#ffffff" android:id="@+id/cancel" android:background="@drawable/round_rect" android:layout_width="120dp" android:layout_height="wrap_content" android:text="@string/cancle"/>
+        <View android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton android:textColor="#ffffff" android:id="@+id/ok" android:background="@drawable/round_rect" android:layout_width="120dp" android:layout_height="wrap_content" android:text="@string/confirm"/>
+        <View android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

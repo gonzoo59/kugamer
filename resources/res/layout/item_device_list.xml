@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/dbg_default_list_item_click" android:layout_width="match_parent" android:layout_height="@dimen/list_item_height">
+    <ImageView android:id="@+id/iv_device_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_bluetooth" android:layout_centerVertical="true" android:paddingStart="@dimen/padding_right" android:paddingEnd="@dimen/padding_right"/>
+    <TextView android:textSize="15sp" android:textColor="@color/rc_item_com_text" android:gravity="center_vertical" android:id="@+id/tv_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/padding_right" android:layout_toEndOf="@+id/iv_device_type"/>
+    <ImageView android:id="@+id/iv_device_status" android:padding="@dimen/padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_connect_selector" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

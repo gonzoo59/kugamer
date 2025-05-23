@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root" android:background="#e6000000" android:paddingLeft="2dp" android:layout_width="200dp" android:layout_height="wrap_content" android:layoutDirection="ltr">
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="left" android:id="@+id/close" android:background="@mipmap/close_btn" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="10dp"/>
+        <Button android:textSize="12sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/m_btnQuestion" android:background="@drawable/round_rect5" android:layout_width="25dp" android:layout_height="20dp" android:layout_marginLeft="10dp" android:text="?" android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/xscope_trigger_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trigger_mode" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <Button android:textSize="12sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/m_btnXSCopeTriggerMode" android:background="@drawable/round_rect5" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="10dp" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/xscope_hold_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xscope_hold_title" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <TextView android:textSize="10sp" android:textColor="#00ff00" android:id="@+id/m_textXScopeHoldTime" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/m_btnXScopeHoldTimeMinus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/m_btnXScopeHoldTimePlus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/m_layoutAutoTriggerDelay" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/xscope_delay_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_trigger_delay" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <TextView android:textSize="10sp" android:textColor="#00ff00" android:id="@+id/m_textXScopeAutoTriggerDelay" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/m_btnXScopeAutoTriggerDelayMinus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/m_btnXScopeAutoTriggerDelayPlus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/m_layoutAutoLoopDelay" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/xscope_loop_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_loop_delay" android:layout_weight="0" android:textAlignment="textEnd"/>
+        <TextView android:textSize="10sp" android:textColor="#00ff00" android:id="@+id/m_textXScopeLoopDelay" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_weight="0.2" android:textAlignment="center"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:gravity="center" android:id="@+id/m_btnXScopeLoopDelayMinus" android:background="@mipmap/minus" android:layout_width="20dp" android:layout_height="20dp"/>
+            <Button android:gravity="center" android:id="@+id/m_btnXScopeLoopDelayPlus" android:background="@mipmap/plus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Switch android:textSize="10sp" android:textColor="#ffeb3b" android:id="@+id/m_swDunEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xscope_dun_enable" android:layoutDirection="ltr"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="9sp" android:textColor="#ffeb3b" android:id="@+id/xscope_gun_switch_title" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gun_xcope_switch" android:layout_weight="0" android:textAlignment="textEnd"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/m_lstXScopeGame" android:background="#494949" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" style="@style/Widget.AppCompat.Spinner.DropDown"/>
+    </LinearLayout>
+</LinearLayout>

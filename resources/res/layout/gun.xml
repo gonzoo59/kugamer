@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/bg_input_window" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="190dp" android:layout_height="40dp">
+        <TextView android:textSize="20sp" android:gravity="center" android:id="@+id/gung" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginStart="10dp"/>
+        <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageButton android:gravity="center" android:id="@+id/close" android:background="@android:drawable/ic_menu_close_clear_cancel" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="5dp" android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+    <TextView android:textSize="10sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="枪 1" android:layout_marginStart="10dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_width="20dp" android:layout_height="20dp"/>
+        <ImageButton android:gravity="center" android:id="@+id/up1" android:background="@drawable/shape_circle_green" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_baseline_arrow_upward_24"/>
+        <TextView android:textSize="20sp" android:gravity="center" android:id="@+id/gun_value1" android:layout_width="50dp" android:layout_height="50dp" android:text="0"/>
+        <ImageButton android:gravity="center" android:id="@+id/down1" android:background="@drawable/shape_circle_green" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_baseline_arrow_downward_24"/>
+        <View android:layout_width="20dp" android:layout_height="20dp"/>
+    </LinearLayout>
+    <View android:layout_width="20dp" android:layout_height="20dp"/>
+    <TextView android:textSize="10sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="枪 2" android:layout_marginStart="10dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_width="20dp" android:layout_height="20dp"/>
+        <ImageButton android:gravity="center" android:id="@+id/up2" android:background="@drawable/shape_circle_green" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_baseline_arrow_upward_24"/>
+        <TextView android:textSize="20sp" android:gravity="center" android:id="@+id/gun_value2" android:layout_width="50dp" android:layout_height="50dp" android:text="0"/>
+        <ImageButton android:gravity="center" android:id="@+id/down2" android:background="@drawable/shape_circle_green" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_baseline_arrow_downward_24"/>
+        <View android:layout_width="20dp" android:layout_height="20dp"/>
+    </LinearLayout>
+    <View android:layout_width="20dp" android:layout_height="20dp"/>
+</LinearLayout>
